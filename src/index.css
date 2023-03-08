@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  .figure {
-    background-size: cover;
-    position: absolute;
+  .cell {
     height: 12.5%;
     width: 12.5%;
+    position: relative;
+  }
+  .figure {
+    background-size: cover;
+  }
+  .move,
+  .attack {
+    position: absolute;
+    inset: 0;
+  }
+  .move {
+    background-color: rgba(0, 200, 50, 0.4);
+  }
+  .attack {
+    background-color: rgba(200, 0, 10, 0.4);
   }
   .figure.wp {
     background-image: url(https://www.chess.com/chess-themes/pieces/neo/150/wp.png);
@@ -44,7 +57,7 @@
   .figure.bk {
     background-image: url(https://www.chess.com/chess-themes/pieces/neo/150/bk.png);
   }
-  .board {
+  #board {
     background-image: url(https://www.chess.com/boards/green/150.png);
     background-size: cover;
   }
