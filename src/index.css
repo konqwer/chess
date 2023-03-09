@@ -7,13 +7,27 @@
     width: 12.5%;
     position: relative;
   }
+  .cell.green {
+    background-color: #eeeed2;
+  }
+  .cell.white {
+    background-color: #769656;
+  }
+  .picked {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(200, 200, 50, 0.4);
+  }
   .figure {
     background-size: cover;
+    position: absolute;
+    inset: 0;
   }
   .move,
   .attack {
     position: absolute;
     inset: 0;
+    z-index: 10;
   }
   .move {
     background-color: rgba(0, 200, 50, 0.4);
@@ -56,9 +70,5 @@
   }
   .figure.bk {
     background-image: url(https://www.chess.com/chess-themes/pieces/neo/150/bk.png);
-  }
-  #board {
-    background-image: url(https://www.chess.com/boards/green/150.png);
-    background-size: cover;
   }
 }

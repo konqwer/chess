@@ -21,7 +21,7 @@ const initialState = [
     { type: 'p', color: 'b' },
     { type: 'p', color: 'b' }
   ],
-  [null, { type: 'p', color: 'b' }, null, null, null, null, null, null],
+  [null, null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null, null],
@@ -60,5 +60,5 @@ export const boardSlice = createSlice({
   }
 });
 
-export const { moveFigure } = boardSlice.actions;
+export const { moveFigure, getDeads } = boardSlice.actions;
 export default boardSlice.reducer;
